@@ -1,0 +1,155 @@
+body {
+  background: url("me.jpg");
+  background-size: cover;
+  animation: color-me-in 3s;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin:0;
+  padding:0;
+}
+
+@keyframes color-me-in {
+    0% {
+      background: white;
+    }
+    80% {
+      background: black;
+    }
+    100% {
+      background: white;
+    }
+}
+
+div h2 {
+  color: #399885;
+}
+
+div p {
+  color: white;
+  font-size: 18px;
+}
+
+/*******HEADER OVERVIEW***/
+#headline {
+  color: white;
+  font-size: 60px;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin-left: 35%;
+}
+
+#headline h1{
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 10px;
+}
+
+/*******DROPDOWN BUTTON OVERVIEW***/
+/*Dropdown Button */
+.dropbtn {
+  background-color: rgba(0,0,0,0);
+  color: white;
+  border: 1px solid white ;
+  padding: 12px 43px;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: 3px;
+  animation: button-delay 4s;
+}
+
+/*TIMED ANIMATION FOR BUTTON*/
+@keyframes button-delay {
+    0% {
+      background: rgba(0,0,0,0);
+      color: rgba(0,0,0,0);
+      border: none;
+
+    }
+    100% {
+      background: rgba(0,0,0,0);
+      color: rgba(0,0,0,0);
+      border: none;
+    }
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 60%;
+  text-align: center;
+  background-color: black;
+  animation: button-delay 4s;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(51,51,51,.02);
+  color: grey;
+  min-width: 150px;
+  width: 50%;
+  padding: 12px 16px;
+  z-index: 1;
+  box-shadow: 0px 2px 4px 0px black;
+  padding: 0px;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: grey;
+  padding: 18px 0px;
+  background-color: rgba(0,0,0,0);
+  text-decoration: none;
+  display: block;
+  margin: 0;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgba(51,51,51,.3)}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: black;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: (0,0,0,0);
+}
+
+/*******ABOUT ME SECTION******/
+.aboutme {
+  text-align: center;
+  margin-top: 420px;
+  background-color: rgba(51,51,51,.1);
+  padding: 5px;
+}
+
+/*******THE WORK SECTION******/
+.thework {
+  text-align: center;
+  background-color: rgba(51,51,51,.3);
+  padding: 5px;
+}
+
+/*******BLOG SECTION******/
+.blog {
+  text-align: center;
+  background-color: rgba(51,51,51,.5);
+  padding: 5px;
+}
+
+/*******FOOTER SECTION******/
+footer {
+  text-align: center;
+  background-color: rgba(51,51,51,.6);
+  padding: 5px;
+  border-bottom: 15px solid black;
+}
+
+#contact h2{
+  color: #399885;
+}
+
+#contact p{
+  color: white;
+}
