@@ -1,0 +1,102 @@
+body {
+	background-color: rgb(25,24,36);
+	font-family: 'Quicksand', sans-serif;
+}
+
+video#tv-vid {
+		opacity: .4;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+		background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#about {
+	writing-mode: tb-rl;
+	-webkit-transform: rotate(181deg);
+	-moz-transform: rotate(181deg);
+	-o-transform: rotate(181deg);
+	float: left;
+	color: white;
+	margin-left: 2rem;
+	letter-spacing: 2px;
+	display: inline-block;
+	margin-top: 20%;
+}
+
+#portfolio {
+	writing-mode: vertical-lr;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	float: right;
+	color: white;
+	margin-right: 2rem;
+	letter-spacing: 2px;
+	display: inline-block;
+	margin-top: 20%;
+}
+
+#hello{
+	margin: 0 auto;
+	margin-top: 20%;
+	position: absolute;
+	display: inline-block;
+	color: white;
+	font-size: 5rem;
+	font-weight: bold;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+.close {
+	color: black;
+	float: right;
+}
+
+#picture {
+	float: right;
+	height: 40%;
+	border-radius: 50%;
+}
+
+.modal div {
+	color: black;
+	display:  inline-block;
+	position: absolute;
+	top: 3rem;
+	bottom: 3rem;
+	left: 3rem;
+	right: 3rem;
+  background-color: white;
+  text-align:left;
+	padding: 3rem;
+	margin: 1rem;
+}
+
+/*#test {
+	background-image: url("face.jpg");
+}*/
+
+#modal-about {
+	visibility: hidden;
+ 	z-index: 1000;
+}
+
+#modal-portfolio {
+ 	visibility: hidden;
+ 	z-index: 1000;
+}

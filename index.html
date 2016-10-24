@@ -2,84 +2,76 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <title>Dziedzic|Developer</title>
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
   </head>
   <body>
 
-    <div id="headline">
-      <h1>ARIANA</h1>
+    <video playsinline autoplay muted loop id="tv-vid">
+      <source src="tv.mp4" type="video/mp4">
+    </video>
+
+    <span id="hello"
+       class="txt-rotate"
+       data-rotate='[ "Hello Doll!", "Sup.", "Howdy.", "Hiya", "Why Hello", "Yo.", "Greetings Earthing" ]'>
+    </span>
+
+    <a
+      href='#'
+      id="about"
+      onclick='modalAbout()'>
+      about
+    </a>
+    <div class="modal" id="modal-about">
+      <div id="test">
+        <a href='#' onclick='modalAbout()' class="close">X</a>
+        <!-- <img src="https://pbs.twimg.com/profile_images/460573671304597504/amr6WpR8.jpeg" alt="headshot" id="picture" /> -->
+        <h1> I'm a bagel on a plate full of onion rolls.</h1>
+
+        <h3>As a NYC web developer, code is my canvas.<br>
+        I create with keys clanking, jazz dancing in my ears, and laser focus.</h3>
+        <h3>
+        Like a cat, I've lived many lives.<br>
+        As a COO, Nomad, and Actor. I'm Jill of all trades.<br>
+        Because I believe to make waves in the world, <br>
+        You must experience it. One adventure at a time.<br>
+        Come join me<br>
+        </h3>
+
+        <h4 style="font-weight: bold">Developer Toolbox</h4>
+        <p>JavaScript | React | jQuery | HTML5 <br>
+            CSS | NodeJS | PostgreSQL | Ruby | Rails 4 </p>
+
+        <h4>Things that make me little kid happy</h4>
+          <p>Speaking in funny accents<br>
+              Fuzzy themed socks<br>
+              Watermelon flavored sparkling water
+          </p>
+
+        <h4>Don't be a stranger</h4>
+        <a href="mailto:ariana.dziedzic@gmail.com">arianadziedzic@gmail.com</a>
+        <a href="https://github.com/arianadziedzic" target='_blank' >Github</a>
+        <a href="https://www.linkedin.com/in/ariana-dziedzic-a9aab727" target='_blank'>LinkedIn</a>
+      </div>
     </div>
 
-    <!-- DROP DOWN MENU -->
-    <div class="dropdown">
-      <button class="dropbtn">INDEX</button>
-      <div class="dropdown-content">
-        <a href="#moveA">ch1.0_ab0ut-me</a>
-        <a href="#moveB">ch2.0_t3h-w0rk</a>
-        <a href="#moveC">ch3.0_my-bl0g</a>
-        <a href="#moveD">ch4.0_k0nt4ct</a>
+    <a href='#'
+      id="portfolio"
+      onclick='modalPortfolio()'>
+      portfolio
+    </a>
+    <div class="modal" id="modal-portfolio">
+      <div>
+        <a href='#' onclick='modalPortfolio()' class="close">X</a>
+        <div>
+          <img src="" alt="" />
+
         </div>
+      </div>
     </div>
 
-    <!-- ABOUT ME SECTION -->
-    <div class="aboutme">
-    <a name="moveA"></a>
-    <h2>ab0ut-me</h2>
-    <p> It started out simple.</br>
-      Finish Degree. Audition. Survive Real life. </br>
-      20 countries, 52 cities, and 7 years later,</br>
-      Simple was not the path. </br>
-      Simple became the mentality.</br>
-      Life of a actor. </br>
-      Life of a nomad. </br>
-      Life of a COO.  </br>
-      All were simply, a freakin' blast. </br>
-      Now onto the life of a developer. </br>
-      New day. New destiny. </br>
-      You know that saying, "Jack of all trades, master of none,"?</br>
-      The best sentence is the last one.</br>
-      Often forgotten. Often unsaid. </br>
-      "...But oftentimes better than a master of one." </br>
-      True. That.</br>
-    </p>
-    </div>
-
-    <!-- WORK SECTION -->
-    <div class="thework">
-      <a name="moveA"></a>
-      <h2>t3h-w0rk</h2>
-      <p>Soon to come!</br>
-        Get. Pumped.
-      </p>
-    </div>
-
-    <!-- BLOG SECTION -->
-    <div class="blog">
-      <a name="moveC"></a>
-      <h2>my-bl0g</h2>
-      <p> Bored? Simple. You're only bored if you're boring.</br>
-      Get a peak inside my brain as I hack the world. </br>
-      <!-- Breaking the Code: Why Yuor Barin Can Raed Tihs </br>
-      You might not realize it, but your brain is a code-cracking machine.</br>
-
-      For emaxlpe, it deson’t mttaer in waht oredr the ltteers </br>
-      in a wrod aepapr, the olny iprmoatnt tihng is taht the frist </br>
-      and lsat ltteer are in the rghit pcale. The rset can be a </br>
-      toatl mses and you can sitll raed it wouthit pobelrm. -->
-      </p>
-    </div>
-
-    <!-- FOOTER SECTION -->
-    <footer id="contact">
-      <a name="moveC"></a>
-      <h2 >k0nt4ct</h2>
-      <p>Don't be a stranger! </br>
-        ariana.dziedzic@gmail.com
-      </p>
-    </footer>
-    <script src="app.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
