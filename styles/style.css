@@ -88,9 +88,13 @@ a {
 	float: right;
 }
 
+#close-button {
+	padding: 1rem;
+}
+
 /****** ABOUT MODAL ******/
 .modal div {
-	color: black;
+	color: rgb(27,29,29);
 	display:  inline-block;
 	position: absolute;
 	top: 3rem;
@@ -99,7 +103,6 @@ a {
 	right: 3rem;
   background-color: white;
   text-align:left;
-	padding: 3rem;
 	margin: 1rem;
 }
 
@@ -111,8 +114,9 @@ a {
 #background {
 	background-image: url("face.jpg");
 	background-repeat: no-repeat;
-	background-size: 80%;
+	background-size: 95%;
 	background-position: 25rem;
+	padding: 3rem;
 }
 
 #modal-about h3 {
@@ -138,7 +142,7 @@ a {
 }
 
 .link {
-	color: black;
+	color: rgb(27,29,29);
 	font-size: 1.05rem;
 	text-transform: none;
 	font-weight: lighter;
@@ -157,10 +161,52 @@ a {
 }
 
 /****** PORTFOLIO MODAL ******/
-
 #modal-portfolio {
+	font-family: helvetica;
  	visibility: hidden;
- 	z-index: 1000;
+ 	z-index: 100;
+	color: rgb(27,29,29);
+}
+
+#modal-portfolio h3 {
+	margin-top: -1rem;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+
+#modal-portfolio h4 {
+	margin-top: -1rem;
+	font-size: 1rem;
+	font-weight: lighter;
+}
+
+#modal-portfolio h5 {
+	margin-top: -1rem;
+	font-size: .9rem;
+	font-weight: lighter;
+	margin-bottom: 1rem;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.github {
+	text-transform: lowercase;
+	position: fixed;
+	margin-top: -3rem;
+	margin-left: 55%;
+	color: rgb(27,29,29);
+	font-weight: bolder;
+}
+
+.live {
+	text-transform: lowercase;
+	position: fixed;
+	margin-top: -3rem;
+	margin-left: 60.5%;
+	color: rgb(27,29,29);
+	font-weight: bolder;
 }
 
 #slides {
@@ -173,16 +219,11 @@ a {
 }
 
 .slide {
-		font-size: 1rem;
-		color: black;
     position: absolute;
-    left: 0px;
-    top: 0px;
     width: 100%;
     height: 100%;
     opacity: 0;
     z-index: 1;
-
     -webkit-transition: opacity 4s;
     -moz-transition: opacity 4s;
     -o-transition: opacity 4s;
@@ -196,27 +237,28 @@ a {
 
 img {
 	position: relative;
-	margin-top: -3rem;
 	width: 80%;
 	height: 90%;
 	left: 10%;
 }
 
 button {
+	magin: 0;
 	font-size: 4rem;
-	background:none;
-  border:none;
+	background: none;
+  border: none;
 	color: rgb(180,178,178);
 }
 
 button:nth-of-type(1) {
-	margin-left: -6rem;
-  position: absolute;
-  margin-top: 10rem;
+	display: block;
+  position: fixed;
+	top: 50%;
 }
 
 button:nth-of-type(2) {
-	margin-left: 50rem;
-	position: absolute;
-	margin-top: -16rem;
+	display: block;
+	position: fixed;
+	left: 85%;
+	top: 50%;
 }
