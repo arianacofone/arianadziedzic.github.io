@@ -89,12 +89,6 @@ a {
 }
 
 /****** ABOUT MODAL ******/
-#modal-about {
-	font-family: helvetica;
-	visibility: hidden;
-	z-index: 1000;
-}
-
 .modal div {
 	color: black;
 	display:  inline-block;
@@ -109,14 +103,16 @@ a {
 	margin: 1rem;
 }
 
-#picture {
-	float: right;
-	position: relative;
-	height: 550px;
-	width: 350px;
-	margin-right: 5rem;
-	top: 5.6rem;
-	bottom: 0;
+#modal-about {
+	font-family: helvetica;
+	visibility: hidden;
+}
+
+#background {
+	background-image: url("face.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 200%;
 }
 
 #modal-about h3 {
