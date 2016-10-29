@@ -8,14 +8,15 @@
     <title>Dziedzic</title>
   </head>
   <body>
-
+    <h1 id="name">ARIANA DZIEDZIC</h1>
     <video playsinline autoplay muted loop id="tv-vid">
-      <source src="tv.mp4" type="video/mp4">
+      <source src="assets/tv.mp4" type="video/mp4">
     </video>
 
-    <span id="hello"
-       class="txt-rotate"
-       data-rotate='[ "Hello Doll!", "Sup.", "Howdy.", "Hiya", "Why Hello", "Yo.", "Greetings Earthing" ]'>
+    <span
+      id="hello"
+      class="txt-rotate"
+      data-rotate='[ "Hiya.", "Hello.", "Hi Doll!", "Sup.", "Howdy.", "Why Hello.", "Yo.", "Greetings Earthing!" ]'>
     </span>
 
     <a
@@ -27,33 +28,29 @@
     <div class="modal" id="modal-about">
       <div id="test">
         <a href='#' onclick='modalAbout()' class="close">X</a>
-        <!-- <img src="https://pbs.twimg.com/profile_images/460573671304597504/amr6WpR8.jpeg" alt="headshot" id="picture" /> -->
-        <h1> I'm a bagel on a plate full of onion rolls.</h1>
-
-        <h3>As a NYC web developer, code is my canvas.<br>
-        I create with keys clanking, jazz dancing in my ears, and laser focus.</h3>
-        <h3>
-        Like a cat, I've lived many lives.<br>
-        As a COO, Nomad, and Actor. I'm Jill of all trades.<br>
-        Because I believe to make waves in the world, <br>
-        You must experience it. One adventure at a time.<br>
-        Come join me<br>
-        </h3>
-
-        <h4 style="font-weight: bold">Developer Toolbox</h4>
-        <p>JavaScript | React | jQuery | HTML5 <br>
-            CSS | NodeJS | PostgreSQL | Ruby | Rails 4 </p>
-
-        <h4>Things that make me little kid happy</h4>
-          <p>Speaking in funny accents<br>
-              Fuzzy themed socks<br>
-              Watermelon flavored sparkling water
-          </p>
+        <img src="assets/headshot.jpg" alt="headshot" id="picture" />
+        <h1>Ariana Dziedzic</h1>
+        <h3>WEB DEVELOPER</h3>
+        <p><span id="bagel"> I'm a bagel on a plate full of onion rolls.</span> Born in Chicago,<br>
+        traveled the world, now settling down here in New York City.<br>
+        I strive to make the world a better place through beautiful code.
+        </p>
+        <p>
+        I’ve been a Chief Operating Officer, a performer, a waitress, and <br>everything in between. My goal is to collaborate on projects with<br>
+        like-minded people who want to improve users’ lives.
+        </p>
 
         <h4>Don't be a stranger</h4>
-        <a href="mailto:ariana.dziedzic@gmail.com">arianadziedzic@gmail.com</a>
-        <a href="https://github.com/arianadziedzic" target='_blank' >Github</a>
-        <a href="https://www.linkedin.com/in/ariana-dziedzic-a9aab727" target='_blank'>LinkedIn</a>
+        <a class="link" href="mailto:ariana.dziedzic@gmail.com">arianadziedzic@gmail.com</a><br>
+        <a class="link" href="https://github.com/arianadziedzic" target='_blank' >github - </a>
+        <a class="link" href="https://www.linkedin.com/in/ariana-dziedzic-a9aab727" target='_blank'>linkedIn</a>
+
+        <h5>Developer Toolbox</h5>
+        <h6 id="toolbox">
+          JavaScript | React | NodeJS<br>
+          CSS | jQuery | PostgreSQL <br>
+          HTML5 | Ruby | Rails 4
+        </h6>
       </div>
     </div>
 
@@ -67,15 +64,62 @@
       <div>
         <a href='#' onclick='modalPortfolio()' class="close">X</a>
         <div>
-          <h1> COMING SOON</h1>
-          <h3> Check out my
-            <a href="https://github.com/arianadziedzic" target='_blank' >Github</a>
-            in the meantime.
-          </h3>
+          <button onclick="currentSlide(+1)">⟨</button>
+          <ul id="slides">
+            <li class="slide showing">
+              <img src="assets/sync.png" />
+              <h3>Sync: Task Manager</h3>
+              <p>A place to remember what you drank and where you drank it. A user can add a name, ingredients, image and location of their favorites drinks.</p>
+              <h4>Technologies: React, Firebase</h4>
+              <a href="#">Application</a>
+              <a href="#">Github</a>
+            </li>
+            <li class="slide">
+              <img src="assets/space_invaders.png" />
+              <h3>Space Invaders + Liam Neeson</h3>
+              <p>A place to remember what you drank and where you drank it. A user can add a name, ingredients, image and location of their favorites drinks.</p>
+              <h4>Technologies: React, Firebase</h4>
+              <a href="#">Application</a>
+              <a href="#">Github</a>
+            </li>
+            <li class="slide">
+              <img src="assets/hush_howl.png" />
+              <h3>Hush/Howl Sign Up</h3>
+              <p>A place to remember what you drank and where you drank it. A user can add a name, ingredients, image and location of their favorites drinks.</p>
+              <h4>Technologies: React, Firebase</h4>
+              <a href="#">Application</a>
+              <a href="#">Github</a>
+            </li>
+            <li class="slide">
+              <img src="assets/pebble_watchface.png" />
+              <h3>Pebble Watchface</h3>
+              <p>A place to remember what you drank and where you drank it. A user can add a name, ingredients, image and location of their favorites drinks.</p>
+              <h4>Technologies: React, Firebase</h4>
+              <a href="#">Application</a>
+              <a href="#">Github</a>
+            </li>
+            <li class="slide">
+              <img src="assets/dream_tracker.png" />
+              <h3>Dream Tracker</h3>
+              <p>A place to remember what you drank and where you drank it. A user can add a name, ingredients, image and location of their favorites drinks.</p>
+              <h4>Technologies: React, Firebase</h4>
+              <a href="#">Application</a>
+              <a href="#">Github</a>
+            </li>
+            <li class="slide">
+              <img src="assets/crank.png" />
+              <h3>Crank-O-Meter</h3>
+              <p>A place to remember what you drank and where you drank it. A user can add a name, ingredients, image and location of their favorites drinks.</p>
+              <h4>Technologies: React, Firebase</h4>
+              <a href="#">Application</a>
+              <a href="#">Github</a>
+            </li>
+          </ul>
+          <button>⟩</button>
         </div>
       </div>
     </div>
-
+    <h1 id="web-dev">WEB DEVELOPER</h1>
     <script src="./js/main.js"></script>
   </body>
 </html>
