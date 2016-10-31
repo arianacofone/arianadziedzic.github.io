@@ -3,6 +3,7 @@ body {
 	background-color: rgb(25,24,36);
 	font-family: 'Quicksand', sans-serif;
 	box-sizing: border-box;
+	margin: 0 auto;
 }
 
 video#tv-vid {
@@ -25,24 +26,29 @@ a {
 	text-transform: uppercase;
 }
 
+ul {
+	list-style: none;
+}
+
 #name {
 	color: white;
 	text-align: center;
 	font-size: 1.2rem;
 	letter-spacing: 2px;
+	z-index: 2;
+	background-color: none;
 }
 
 #hello{
-	margin: 0 auto;
-	margin-top: 20%;
-	position: absolute;
-	display: inline-block;
 	color: white;
 	font-size: 5rem;
 	font-weight: bold;
 	text-align: center;
 	left: 0;
 	right: 0;
+	display: inline-block;
+	position: fixed;
+	top: 45%;
 }
 
 #web-dev {
@@ -58,38 +64,39 @@ a {
 /****** MODALS ******/
 
 #about {
-	writing-mode: tb-rl;
-	-webkit-transform: rotate(181deg);
-	-moz-transform: rotate(181deg);
-	-o-transform: rotate(181deg);
-	float: left;
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
 	color: white;
-	margin-left: 2rem;
+	margin-left: -1rem;
 	letter-spacing: 2px;
 	display: inline-block;
-	margin-top: 20%;
+	position: fixed;
+	top: 45%;
 }
 
 #portfolio {
-	writing-mode: vertical-lr;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	float: right;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
 	color: white;
-	margin-right: 2rem;
+	margin-right: -2rem;
+	right: 0rem;
 	letter-spacing: 2px;
-	display: inline-block;
-	margin-top: 20%;
+	display: block;
+	position: fixed;
+	top: 45%;
 }
 
 .close {
 	color: black;
 	float: right;
+	margin-right: -2rem;
+	margin-top: -2rem;
 }
 
 #close-button {
-	padding: 1rem;
+	padding: 3rem;
 }
 
 /****** ABOUT MODAL ******/
@@ -112,10 +119,11 @@ a {
 }
 
 #background {
-	background-image: url("face.jpg");
+	background-image: url("face-background.png");
 	background-repeat: no-repeat;
-	background-size: 95%;
-	background-position: 25rem;
+	background-size: 90%;
+	background-position: bottom;
+	background-attachment: fixed;
 	padding: 3rem;
 }
 
@@ -194,52 +202,43 @@ a {
 .github {
 	text-transform: lowercase;
 	position: fixed;
-	margin-top: -3rem;
-	margin-left: 55%;
+	margin-top: -1.5rem;
+	left: 77%;
 	color: rgb(27,29,29);
-	font-weight: bolder;
+	font-size: .9rem;
 }
 
-.live {
+.view-live {
 	text-transform: lowercase;
 	position: fixed;
-	margin-top: -3rem;
-	margin-left: 60.5%;
+	margin-top: -2.7rem;
+	left: 77%;
 	color: rgb(27,29,29);
-	font-weight: bolder;
-}
-
-#slides {
-    position: relative;
-    height: 100%;
-		width: 100%;
-    padding: 0px;
-    margin: 0px;
-    list-style-type: none;
+	font-size: .9rem;
 }
 
 .slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 1;
-    -webkit-transition: opacity 4s;
-    -moz-transition: opacity 4s;
-    -o-transition: opacity 4s;
-    transition: opacity 4s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .showing {
-    opacity: 1;
-    z-index: 2;
+  opacity: 1;
+  z-index: 2;
 }
 
 img {
 	position: relative;
-	width: 80%;
-	height: 90%;
-	left: 10%;
+	max-height: 100%;
+	width: 75%;
+	left: 7.5%;
 }
 
 button {
@@ -248,6 +247,9 @@ button {
 	background: none;
   border: none;
 	color: rgb(180,178,178);
+	z-index: 200;
+	outline: none;
+
 }
 
 button:nth-of-type(1) {

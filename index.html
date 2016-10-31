@@ -7,7 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <title>Dziedzic</title>
   </head>
+
   <body>
+
     <h1 id="name">ARIANA DZIEDZIC</h1>
     <video playsinline autoplay muted loop id="tv-vid">
       <source src="assets/tv.mp4" type="video/mp4">
@@ -16,7 +18,8 @@
     <span
       id="hello"
       class="txt-rotate"
-      data-rotate='[ "Hiya.", "Hello.", "Hi Doll!", "Sup.", "Howdy.", "Why Hello.", "Yo.", "Greetings Earthing!" ]'>
+      data-rotate='[ "Hiya.", "Hello.", "Sup.", "Howdy.", "Why Hello.", "Yo.", "Greetings Earthing!" ]'
+    >
     </span>
 
     <a
@@ -25,14 +28,15 @@
       onclick='modalAbout()'>
       about
     </a>
+
     <div class="modal" id="modal-about">
       <div id="background">
         <a href='#' onclick='modalAbout()' class="close">X</a>
 
         <h1>Ariana Dziedzic</h1>
         <h3>WEB DEVELOPER</h3>
-        <p><span id="bagel"> I'm a bagel on a plate full of onion rolls.</span> Born in Chicago,<br>
-        traveled the world, now settling down here in New York City.<br>
+        <p><span id="bagel"> I'm a bagel on a plate full of onion rolls.</span> Chicago born,<br>
+        I've traveled the world nomad style, settling down in New York City.<br>
         I strive to make the world a better place through beautiful code.
         </p>
         <p>
@@ -41,9 +45,24 @@
         </p>
 
         <h4>Don't be a stranger</h4>
-        <a class="link" href="mailto:ariana.dziedzic@gmail.com">arianadziedzic@gmail.com</a><br>
-        <a class="link" href="https://github.com/arianadziedzic" target='_blank' >github - </a>
-        <a class="link" href="https://www.linkedin.com/in/ariana-dziedzic-a9aab727" target='_blank'>linkedIn</a>
+        <a
+          class="link"
+          target="_blank"
+          href="mailto:ariana.dziedzic@gmail.com">
+          arianadziedzic@gmail.com
+        </a><br>
+        <a
+          class="link"
+          target="_blank"
+          href="https://github.com/arianadziedzic">
+          github -
+          </a>
+        <a
+          class="link"
+          target="_blank"
+          href="https://www.linkedin.com/in/ariana-dziedzic-a9aab727">
+          linkedIn
+        </a>
 
         <h5>Developer Toolbox</h5>
         <h6 id="toolbox">
@@ -61,21 +80,32 @@
       onclick='modalPortfolio()'>
       portfolio
     </a>
+
     <div class="modal" id="modal-portfolio">
       <div>
         <a href='#' onclick='modalPortfolio()' class="close" id="close-button">X</a>
         <div class="portfolio-background">
-          <button onclick="currentSlide(+1)">⟨</button>
+          <button id="previousSlide" onclick='previousSlide() '>⟨</button>
           <ul id="slides">
 
             <li class="slide showing">
               <h3>Sync</h3>
               <h4>Task Manager</h4>
               <h5><span class="bold">Technologies:</span> React, Firebase</h5>
-              <a href="#" class="github">Github  - </a>
-              <a href="#"
-                class="live">View Live</a>
-
+              <p>
+              <a
+                href="https://github.com/arianadziedzic/bullet_journal"
+                target="_blank"
+                class="github">
+                View Github
+              </a>
+              <a
+                href="http://arianadziedzic.com/bullet_journal/index.html#/?_k=ap1l6r"
+                target="_blank"
+                class="view-live">
+                View Live
+              </a>
+              </p>
               <img src="assets/sync.png" />
             </li>
 
@@ -83,9 +113,18 @@
               <h3>Space Invaders</h3>
               <h4>A Classic + Liam Neeson</h4>
               <h5><span class="bold">Technologies:</span> Vanilla JS</h5>
-              <a href="#" class="github">Github  - </a>
-              <a href="#"
-                class="live">View Live</a>
+              <a
+                href="https://github.com/arianadziedzic/space_invaders"
+                target="_blank"
+                class="github">
+                View Github
+              </a>
+              <a
+                href="http://arianadziedzic.com/space_invaders/index.html"
+                target="_blank"
+                class="view-live">
+                View Live
+              </a>
               <img src="assets/space_invaders.png" />
             </li>
 
@@ -93,9 +132,18 @@
               <h3>Hush/Howl</h3>
               <h4>Simple Business Sign Up</h4>
               <h5><span class="bold">Technologies:</span> React, Express, Node.js</h5>
-              <a href="#" class="github">Github  - </a>
-              <a href="#"
-                class="live">View Live</a>
+              <a
+                href="https://github.com/arianadziedzic/hush_howl"
+                target="_blank"
+                class="github">
+                View Github
+              </a>
+              <a
+                href="https://hush-howl.herokuapp.com/"
+                target="_blank"
+                class="view-live">
+                View Live
+              </a>
               <img src="assets/hush_howl.png" />
             </li>
 
@@ -103,9 +151,18 @@
               <h3>Pebble Watchface</h3>
               <h4>Keeping Time in Style</h4>
               <h5><span class="bold">Technologies:</span> C </h5>
-              <a href="#" class="github">Github  - </a>
-              <a href="#"
-                class="live">View Live</a>
+              <a
+                href="https://github.com/arianadziedzic/lucid_dream_watch_face"
+                target="_blank"
+                class="github">
+                View Github
+              </a>
+              <a
+                href="https://apps.getpebble.com/en_US/application/57ec63973095e34b9e000245?query=lucid&section=watchfaces"
+                target="_blank"
+                class="view-live">
+                View Live
+              </a>
               <img src="assets/pebble_watchface.png" />
             </li>
 
@@ -113,9 +170,18 @@
               <h3>Dream Tracker</h3>
               <h4>A Space for the Subconscious</h4>
               <h5><span class="bold">Technologies:</span> Ruby on Rails </h5>
-              <a href="#" class="github">Github  - </a>
-              <a href="#"
-                class="live">View Live</a>
+              <a
+                href="https://github.com/arianadziedzic/rails_dream_tracker"
+                target="_blank"
+                class="github">
+                View Github
+              </a>
+              <a
+                href="https://dream-tracker.herokuapp.com/"
+                target="_blank"
+                class="view-live">
+                View Live
+              </a>
               <img src="assets/dream_tracker.png" />
             </li>
 
@@ -123,16 +189,26 @@
               <h3>Crank-O-Meter</h3>
               <h4>Official Apology Generator</h4>
               <h5><span class="bold">Technologies:</span> React, Express, Node.js </h5>
-              <a href="#" class="github">Github  -</a>
-              <a href="#"
-                class="live">View Live</a>
+              <a
+              href="https://github.com/arianadziedzic/crank-o-meter"
+              target="_blank"
+              class="github">
+              View Github
+              </a>
+              <a
+                href="https://crank-o-meter.herokuapp.com/"
+                target="_blank"
+                class="view-live">
+                View Live
+              </a>
               <img src="assets/crank.png" />
             </li>
           </ul>
-          <button>⟩</button>
+          <button onClick='nextSlide()'>⟩</button>
         </div>
       </div>
     </div>
+
     <h1 id="web-dev">WEB DEVELOPER</h1>
     <script src="./js/main.js"></script>
   </body>

@@ -1,3 +1,4 @@
+// Hello Script Functionality
 window.onload = function() {
   let elements = document.getElementsByClassName('txt-rotate');
   for (let i = 0; i < elements.length; i++) {
@@ -49,22 +50,37 @@ TxtRotate.prototype.tick = function() {
   }, delta);
 };
 
+// Modal Functionality
 function modalPortfolio() {
 	el = document.querySelector('#modal-portfolio');
+  otherEl = document.querySelector('#modal-about');
 	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+  otherEl.style.visibility = "hidden";
 }
 
 function modalAbout() {
 	el = document.querySelector('#modal-about');
+  otherEl = document.querySelector('#modal-portfolio');
 	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+  otherEl.style.visibility = "hidden";
 }
 
-var slides = document.querySelectorAll('#slides .slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,5000);
+// Slideshow Functionality
+let slides = document.querySelectorAll('#slides .slide');
+let currentSlide = 0;
+let slideInterval = setInterval(nextSlide, 3000);
+
+function slideMovement(n) {
+  slides[currentSlide].className = 'slide';
+  currentSlide = (n + slides.length)%slides.length;
+  slides[currentSlide].className = 'slide showing';
+}
 
 function nextSlide() {
-    slides[currentSlide].className = 'slide';
-    currentSlide = (currentSlide+1)%slides.length;
-    slides[currentSlide].className = 'slide showing';
+    slideMovement(currentSlide+1);
+}
+
+function previousSlide() {
+    slideMovement(currentSlide-1);
+    clearInterval(slideInterval);
 }
