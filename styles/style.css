@@ -119,9 +119,10 @@ ul {
 }
 
 #background {
+	display: inline;
 	background-image: url("face-background.png");
 	background-repeat: no-repeat;
-	background-size: 90%;
+	background-size: 85%;
 	background-position: bottom;
 	background-attachment: fixed;
 	padding: 3rem;
